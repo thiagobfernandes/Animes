@@ -1,0 +1,21 @@
+.navbar {
+   
+    background-image: linear-gradient(to right top, #051937, #171228, #190a1a, #12040d, #000000);
+    color:  white !important;
+    box-shadow: 1px 1px 2px  #253342 ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+    img{
+        width: 70%;
+    }
+
+}
+
+
+
+.nav-item{
+    margin-left: 10px;
+    margin-right: 10px;
+}

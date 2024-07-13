@@ -1,0 +1,24 @@
+@media(max-width:400px){
+.imagem{
+    height: 160px !important;  
+    img{
+        height: 160px !important;
+    }
+    .largura{
+        width: 100% !important;
+        
+    }
+}
+}
+
+@media(min-width:600px){
+    .imgg{
+        width: 25% !important;
+    }
+    .imagenss{
+        width: 100% !important;
+    }
+    .bordas{
+        width: 75% !important;
+    }
+}

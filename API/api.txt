@@ -1,0 +1,5 @@
+https://dattebayo-api.onrender.com/characters
+
+https://api.jikan.moe/v4/anime
+
+https://paletadecores.com/paleta/07f9a2/09c184/0a8967/0c5149/0d192b/

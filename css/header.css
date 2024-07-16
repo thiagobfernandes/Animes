@@ -18,4 +18,17 @@
 .nav-item{
     margin-left: 10px;
     margin-right: 10px;
+     a:hover{
+        background-color: blue;
+        
+     }
+}
+
+.botaozin i{
+    border: 1px solid blue;
+    padding: 10px;
+    border-radius: 6px;
+}
+.botaozin i:hover{
+    background-color: blue;
 }

@@ -1,12 +1,36 @@
+.rank{
+  box-shadow: 0 0 4px #1862ed;
+  background-image: linear-gradient(to right top, #051937, #171228, #190a1a, #12040d, #000000);
+}
+.redes i:hover{
+  color:#1862ed
+  
+}
+
+
+.botaozin{
+  background-color: transparent;
+  border: 2px;
+  border-color:white !important;
+   i{
+    color: white;
+   }  
+.nav-link a:hover  {
+  background-color: #1862ed;
+}
+}
 body{
   margin-top: 100px;
-  
+  background-image: linear-gradient(to right top, #051937, #171228, #190a1a, #12040d, #000000);
 }
 
 
 .card-body{
   font-family: "Kanit", sans-serif;
   
+}
+.branco{
+  background-color: white;
 }
 .populares{
   background-image: linear-gradient(to right top, #051937, #171228, #190a1a, #12040d, #000000);
@@ -27,9 +51,7 @@ body{
     width: 100%;
     
   }
-  .cards{
-   
-  }
+ 
   
         }
 
@@ -42,14 +64,16 @@ body{
 
 
        .cardes{
-        box-shadow: 0px 0px 10px #48464e;
+        box-shadow: 0px 0px 10px #28116a;
         border-radius: 10px;
-       
-        
+        height: 500px;
+     
+  
        }
 
 
        .bta {
+        background-color: transparent;
         --color: #1d27e4;
         font-family: inherit;
         display: inline-block;
@@ -81,7 +105,7 @@ body{
        }
        
        .bta:hover {
-        color: #fff;
+        color: #160202;
        }
        
        .bta:before {
@@ -194,6 +218,8 @@ body{
        display: flex;
         flex-direction: column; 
          align-items: center; 
+        
+        
     }
     /* switch card */
     .switch {
@@ -230,7 +256,8 @@ body{
     
     .flip-card__inner {
       width: 300px;
-      height: 350px;
+      height: 400px;
+
       
       background-color: transparent;
      
@@ -323,3 +350,242 @@ body{
       color: var(--font-color);
       cursor: pointer;
     } 
+
+
+    .navbar-toggler{
+      background-color: #1d27e4;
+      color:white
+    }
+
+    .vermais a{
+      text-decoration: none;
+    }
+
+
+    .fa-star {
+      font-size: 16px;
+      color: #ccc;
+  }
+  
+  .checked {
+      color: gold;
+  }
+  
+  .stars {
+      margin-bottom: 10px;
+  }
+
+
+  .input-container {
+    width: 220px;
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: calc(50% + 5px);
+    transform: translateY(calc(-50% - 5px));
+  }
+  
+  .input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    transition: .2s linear;
+    border: 2.5px solid black;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .input:focus {
+    outline: none;
+    border: 0.5px solid black;
+    box-shadow: -5px -5px 0px rgb(132, 129, 129);
+  }
+  
+  .input-container:hover > .icon {
+    animation: anim 1s linear infinite;
+  }
+  
+  @keyframes anim {
+    0%,
+    100% {
+      transform: translateY(calc(-50% - 5px)) scale(1);
+    }
+  
+    50% {
+      transform: translateY(calc(-50% - 5px)) scale(1.1);
+    }
+  }
+
+
+
+  .button {
+    font-family: monospace;
+    font-size: 14px;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background: #252525;
+    box-shadow: 3px 3px #f2d0d0;
+    cursor: pointer;
+    margin: 0 10px;
+   
+  }
+  
+  .button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+
+  .button2{
+    font-family: monospace;
+    font-size: 14px;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #ffffff;
+    background: #dd0909;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+
+  .button2:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+
+
+
+
+
+
+
+
+  .buttonk {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .buttonk::before,
+  .buttonk::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .buttonk::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .buttonk::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .buttonk:active,
+  .buttonk:focus {
+    outline: none;
+  }
+  
+  .buttonk:active::before,
+  .buttonk:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .buttonk:active::before {
+    top: 3px;
+  }
+  
+  .buttonk:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .buttonk:hover {
+    color: #0f1923;
+  }
+  
+  .buttonk:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .buttonk:hover .button_lg::after {
+    background-color: #fff;
+  }
+  
+
+  

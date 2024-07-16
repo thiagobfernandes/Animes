@@ -24,10 +24,15 @@ $linhas=mysqli_num_rows($resultado);
 
 
 if($linhas==0) {//testar se houve registro 
-    echo "<html> <body>";
-    echo "<p aling=\"center\" > senha ou usuario </p>";
-    echo "<p aling=\"center\" ><a href=\"../home \"> voltar </a> </p>";
-    echo "</body> </html>";
+  
+    
+    setcookie('usuarioincorreto', "true", time()+20, '/');
+    setcookie('senhaincorreta', "true", time()+20, '/');
+    echo "<html><body>";
+    echo "<script type='text/javascript'>
+        window.location.href = '../paginalogin';
+    </script>";
+    echo "</body></html>";
     
 } 
 else
@@ -35,15 +40,23 @@ else
     
     $linhasdb=$row["senha"];
 if ($senha != $linhasdb) {
+ 
+    setcookie('usuarioincorreto', "true", time()+20, '/');
+    setcookie('senhaincorreta',"true", time()+20, '/');
+    echo "<html><body>";
+    echo "<script type='text/javascript'>
+        window.location.href = '../paginalogin';
+    </script>";
+    echo "</body></html>";
 
-    echo "<html> <body>";
-echo "<p align=\"center\"> a senha ou usuario</p>" ;
-echo "<p align= \"center\"> <a href= \"../home\" > voltar </a> </p>";
-echo "</body> </html>";
-} else { // usuario e senha corretos vamos criar os cookies
+} else { 
     setcookie('nome_usuario', $username, $expiracao, '/');
     setcookie('senha_usuario', $senha, $expiracao, '/');
- // direciona para a pagina incial dos usuarios cadastrados
+    setcookie('usuarioincorreto', "true", time()-20, '/');
+    setcookie('senhaincorreta',"true", time()-20, '/');
+
+    
+ 
  echo "<html><body>";
         echo "<script type='text/javascript'>window.location.href = '../home';</script>";
         echo "</body></html>";

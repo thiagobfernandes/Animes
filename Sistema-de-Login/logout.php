@@ -1,13 +1,13 @@
 <?php
 
-// Verifica se os cookies 'nome_usuario' e 'senha_usuario' estão definidos
+
 if(isset($_COOKIE['nome_usuario']) && isset($_COOKIE['senha_usuario'])) {
     // Obtém os valores dos cookies
     $nome_usuario = $_COOKIE['nome_usuario'];
     $senha_usuario = $_COOKIE['senha_usuario'];
 
-    // Define o tempo de expiração para 7 dias em segundos
-    $expiracao = 7 * 24 * 60 * 60; // 7 dias em segundos
+   
+    $expiracao = 7 * 24 * 60 * 60; 
 
     // Desconfigura os cookies 'nome_usuario' e 'senha_usuario'
     setcookie('nome_usuario', '', time() - $expiracao, '/');

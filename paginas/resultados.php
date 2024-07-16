@@ -20,14 +20,14 @@ if (isset($_GET['search'])) {
         
             <?php foreach ($data['data'] as $arquivos){
 ?>
- <div class="cards col-md-3 p-0  ">
+ <div class="cards col-md-3 p-0  mb-4 ">
                 <div class="card2  d-flex justify-content-center">
                 <div class="cardes" style="width: 18rem;">
-              <img src="<?=$arquivos['images']['webp']['image_url']?>" class="card-img-top" alt="..." style="height: 300px; border-radius: 4px;">
+              <a href="pagina/<?=$arquivos['mal_id']?>"><img src="<?=$arquivos['images']['webp']['image_url']?>" class="card-img-top" alt="..." style="height: 300px; border-radius: 4px;"></a>
             <div class="card-body text-center p-2">
                 <p class="card-text fs-6"><?=$arquivos['title']?></p>
-                <div class="alinhar d-flex">
-                    <a href=""class="btnn btn"> Saiba Mais</a>
+                <div class="alinhar d-flex flex-column justify-content-center text-center align-items-center">
+                    <a href="pagina/<?=$arquivos['mal_id']?>" class="btnn btn"> Saiba Mais</a>
                     <button type="button" class="bta" data-bs-toggle="modal" data-bs-target="#staticBackdrop<?=$arquivos['mal_id']?>">
                      Sinopse
                     </button>

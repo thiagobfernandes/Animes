@@ -1,0 +1,10 @@
+<?php 
+$host = "monorail.proxy.rlwy.net"; // Endereço do servidor
+$usuario = "root"; // Nome de usuário
+$senha = "FmVURQIxnuCyaALNGfKgBWnTTUTbzVXH"; // Senha
+$banco = "railway"; // Nome do banco de dados
+$porta = 56800; // Porta (substi
+$conexao = mysqli_connect($host, $usuario, $senha, $banco, $porta);
+mysqli_select_db($conexao, "railway");
+
+?>
